@@ -1,0 +1,310 @@
+[1526242] python3.12@127.0.0.1
+  void _flash_kda_fwd_prepare<TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<32768>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<int, 0>>, const Layout<tuple<C<128>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<128>, C<16>>, C<1>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<0>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<32768>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<int, 0>>, const Layout<tuple<C<128>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<128>, C<16>>, C<1>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<0>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<512>, AuxTmaParams<tuple<ScaledBasis<C<1>, 0>>, const Layout<tuple<C<32>>, tuple<ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<C<32>, C<1>>>>, tuple<C<0>, tuple<tuple<C<1>, C<0>>>>>, tuple<C<32>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<32768>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<int, 0>>, const Layout<tuple<C<128>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<128>, C<16>>, C<1>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<0>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<4096>, AuxTmaParams<tuple<ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<128>, C<1>>, tuple<ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, float>, Layout<tuple<C<1>, tuple<tuple<C<128>, C<1>>>>, tuple<C<0>, tuple<tuple<C<1>, C<0>>>>>, tuple<C<1>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<4096>, AuxTmaParams<tuple<ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<128>, C<1>>, tuple<ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, float>, Layout<tuple<C<1>, tuple<tuple<C<128>, C<1>>>>, tuple<C<0>, tuple<tuple<C<1>, C<0>>>>>, tuple<C<1>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<2>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<16>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<2>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<16>>>, 16, 128, 256, 0>(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, float, int, int, int, const long *, int, const float *, float, const int *) (512, 96, 1)x(256, 1, 1), Device 0, CC 10.3, Invocations 1
+    Section: Compute Workload Analysis
+    -------------------- ----------- ------- ------- -------
+    Metric Name          Metric Unit Minimum Maximum Average
+    -------------------- ----------- ------- ------- -------
+    Executed Ipc Active   inst/cycle    2.86    2.86    2.86
+    Executed Ipc Elapsed  inst/cycle    2.80    2.80    2.80
+    Issue Slots Busy               %   70.13   70.13   70.13
+    Issued Ipc Active     inst/cycle    2.86    2.86    2.86
+    SM Busy                        %   70.13   70.13   70.13
+    -------------------- ----------- ------- ------- -------
+
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- --------- --------- ---------
+    Metric Name             Metric Unit   Minimum   Maximum   Average
+    ----------------------- ----------- --------- --------- ---------
+    DRAM Frequency                  Ghz      4.00      4.00      4.00
+    SM Frequency                    Ghz      1.90      1.90      1.90
+    Elapsed Cycles                cycle 519013.00 519013.00 519013.00
+    Memory Throughput                 %     72.37     72.37     72.37
+    DRAM Throughput                   %     59.00     59.00     59.00
+    Duration                         us    272.54    272.54    272.54
+    L1/TEX Cache Throughput           %     68.87     68.87     68.87
+    L2 Cache Throughput               %     72.37     72.37     72.37
+    SM Active Cycles              cycle 510064.15 510064.15 510064.15
+    Compute (SM) Throughput           %     70.13     70.13     70.13
+    ----------------------- ----------- --------- --------- ---------
+
+    Section: GPU and Memory Workload Distribution
+    -------------------------- ----------- ------------ ------------ ------------
+    Metric Name                Metric Unit      Minimum      Maximum      Average
+    -------------------------- ----------- ------------ ------------ ------------
+    Average DRAM Active Cycles       cycle    602299.75    602299.75    602299.75
+    Total DRAM Elapsed Cycles        cycle  69694464.00  69694464.00  69694464.00
+    Average L1 Active Cycles         cycle    510064.15    510064.15    510064.15
+    Total L1 Elapsed Cycles          cycle  76926856.00  76926856.00  76926856.00
+    Average L2 Active Cycles         cycle    526767.39    526767.39    526767.39
+    Total L2 Elapsed Cycles          cycle  98592904.00  98592904.00  98592904.00
+    Average SM Active Cycles         cycle    510064.15    510064.15    510064.15
+    Total SM Elapsed Cycles          cycle  76926856.00  76926856.00  76926856.00
+    Average SMSP Active Cycles       cycle    510724.93    510724.93    510724.93
+    Total SMSP Elapsed Cycles        cycle 307707424.00 307707424.00 307707424.00
+    -------------------------- ----------- ------------ ------------ ------------
+
+    Section: Instruction Statistics
+    ---------------------------------------- ----------- ------------ ------------ ------------
+    Metric Name                              Metric Unit      Minimum      Maximum      Average
+    ---------------------------------------- ----------- ------------ ------------ ------------
+    Avg. Executed Instructions Per Scheduler        inst    364484.91    364484.91    364484.91
+    Executed Instructions                           inst 215775064.00 215775064.00 215775064.00
+    Avg. Issued Instructions Per Scheduler          inst    364502.62    364502.62    364502.62
+    Issued Instructions                             inst 215785549.00 215785549.00 215785549.00
+    ---------------------------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- ----------- ----------- -----------
+    Metric Name                          Metric Unit     Minimum     Maximum     Average
+    -------------------------------- --------------- ----------- ----------- -----------
+    Block Size                                            256.00      256.00      256.00
+    Cluster Size                                            0.00        0.00        0.00
+    Grid Size                                           49152.00    49152.00    49152.00
+    Preferred Cluster Size                                  0.00        0.00        0.00
+    Registers Per Thread             register/thread       32.00       32.00       32.00
+    Shared Memory Configuration Size           Kbyte      200.70      200.70      200.70
+    Driver Shared Memory Per Block       Kbyte/block        1.02        1.02        1.02
+    Dynamic Shared Memory Per Block      Kbyte/block       21.25       21.25       21.25
+    Static Shared Memory Per Block        byte/block        0.00        0.00        0.00
+    # SMs                                         SM      148.00      148.00      148.00
+    Stack Size                                           1024.00     1024.00     1024.00
+    Threads                                   thread 12582912.00 12582912.00 12582912.00
+    # TPCs                                                 74.00       74.00       74.00
+    Uses Green Context                                      0.00        0.00        0.00
+    Waves Per SM                                           41.51       41.51       41.51
+    -------------------------------- --------------- ----------- ----------- -----------
+
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- --------- --------- ---------
+    Metric Name                            Metric Unit   Minimum   Maximum   Average
+    -------------------------------------- ----------- --------- --------- ---------
+    Local Memory Spilling Requests                          0.00      0.00      0.00
+    Local Memory Spilling Request Overhead           %      0.00      0.00      0.00
+    Memory Throughput                          Tbyte/s      4.53      4.53      4.53
+    Mem Busy                                         %     72.37     72.37     72.37
+    Max Bandwidth                                    %     59.00     59.00     59.00
+    L1/TEX Hit Rate                                  %     99.55     99.55     99.55
+    L2 Persisting Size                           Mbyte     24.87     24.87     24.87
+    L2 Compression Success Rate                      %      0.00      0.00      0.00
+    L2 Compression Ratio                             %      0.00      0.00      0.00
+    L2 Compression Input Sectors                sector 790504.00 790504.00 790504.00
+    L2 Hit Rate                                      %     45.48     45.48     45.48
+    Mem Pipes Busy                                   %     40.38     40.38     40.38
+    -------------------------------------- ----------- --------- --------- ---------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Max Active Clusters                 cluster    0.00    0.00    0.00
+    Max Cluster Size                      block    8.00    8.00    8.00
+    Overall GPU Occupancy                     %    0.00    0.00    0.00
+    Cluster Occupancy                         %    0.00    0.00    0.00
+    Block Limit Barriers                  block   32.00   32.00   32.00
+    Block Limit SM                        block   32.00   32.00   32.00
+    Block Limit Registers                 block    8.00    8.00    8.00
+    Block Limit Shared Mem                block    9.00    9.00    9.00
+    Block Limit Warps                     block    8.00    8.00    8.00
+    Theoretical Active Warps per SM        warp   64.00   64.00   64.00
+    Theoretical Occupancy                     %  100.00  100.00  100.00
+    Achieved Occupancy                        %   96.60   96.60   96.60
+    Achieved Active Warps Per SM           warp   61.82   61.82   61.82
+    ------------------------------- ----------- ------- ------- -------
+
+    Section: PM Sampling
+    ------------------------- ----------- ------- ------- -------
+    Metric Name               Metric Unit Minimum Maximum Average
+    ------------------------- ----------- ------- ------- -------
+    Maximum Buffer Size             Mbyte   30.41   30.41   30.41
+    Maximum Sampling Interval          us    1.00    1.00    1.00
+    # Pass Groups                            2.00    2.00    2.00
+    ------------------------- ----------- ------- ------- -------
+
+    Section: Scheduler Statistics
+    ---------------------------- ----------- ------- ------- -------
+    Metric Name                  Metric Unit Minimum Maximum Average
+    ---------------------------- ----------- ------- ------- -------
+    One or More Eligible                   %   71.37   71.37   71.37
+    Issued Warp Per Scheduler                   0.71    0.71    0.71
+    No Eligible                            %   28.63   28.63   28.63
+    Active Warps Per Scheduler          warp   15.43   15.43   15.43
+    Eligible Warps Per Scheduler        warp    2.27    2.27    2.27
+    ---------------------------- ----------- ------- ------- -------
+
+    Section: Source Counters
+    ------------------------- ----------- ----------- ----------- -----------
+    Metric Name               Metric Unit     Minimum     Maximum     Average
+    ------------------------- ----------- ----------- ----------- -----------
+    Branch Instructions Ratio           %        0.05        0.05        0.05
+    Branch Instructions              inst 10934466.00 10934466.00 10934466.00
+    Branch Efficiency                   %       95.74       95.74       95.74
+    Avg. Divergent Branches      branches      498.16      498.16      498.16
+    ------------------------- ----------- ----------- ----------- -----------
+
+    Section: Warp State Statistics
+    ---------------------------------------- ----------- ------- ------- -------
+    Metric Name                              Metric Unit Minimum Maximum Average
+    ---------------------------------------- ----------- ------- ------- -------
+    Warp Cycles Per Issued Instruction             cycle   21.62   21.62   21.62
+    Warp Cycles Per Executed Instruction           cycle   21.62   21.62   21.62
+    Avg. Active Threads Per Warp                           29.64   29.64   29.64
+    Avg. Not Predicated Off Threads Per Warp               28.16   28.16   28.16
+    ---------------------------------------- ----------- ------- ------- -------
+
+  void _flash_kda_fwd_recurrence<TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<int, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<512>, AuxTmaParams<tuple<ScaledBasis<C<1>, 0>>, const Layout<tuple<C<32>>, tuple<ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<C<32>, C<1>>>>, tuple<C<0>, tuple<tuple<C<1>, C<0>>>>>, tuple<C<32>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<4096>, AuxTmaParams<tuple<ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<128>, C<1>>, tuple<ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, float>, Layout<tuple<C<1>, tuple<tuple<C<128>, C<1>>>>, tuple<C<0>, tuple<tuple<C<1>, C<0>>>>>, tuple<C<1>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<2>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<16>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<2>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<16>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_LOAD, C<32768>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<128>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<1, 4, 3> &>>, float>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<128>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<128>, C<1>>, C<1024>>>>>, tuple<C<1>, C<128>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<32768>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>, const Layout<tuple<C<8>, C<128>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<1, 4, 3> &>>, float>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<128>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<128>, C<1>>, C<1024>>>>>, tuple<C<1>, C<128>, C<128>>>, TiledCopy<Copy_Atom<Copy_Traits<SM90_TMA_STORE, C<2048>, AuxTmaParams<tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<int, 0>>, const Layout<tuple<C<8>, C<16>, C<1>>, tuple<ScaledBasis<C<1>, 2>, ScaledBasis<C<1>, 1>, ScaledBasis<C<1>, 0>>> &, const Swizzle<0, 4, 3> &>>, bfloat16_t>, Layout<tuple<C<1>, tuple<tuple<tuple<C<8>, C<16>>, C<16>>>>, tuple<C<0>, tuple<tuple<tuple<C<16>, C<1>>, C<128>>>>>, tuple<C<1>, C<16>, C<128>>>, 16, 128, 3, 2, 192, 1, 1, 1, 0>(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, bfloat16_t *, int, int, int, const long *, int) (1, 96, 1)x(192, 1, 1), Device 0, CC 10.3, Invocations 1
+    Section: Compute Workload Analysis
+    -------------------- ----------- ------- ------- -------
+    Metric Name          Metric Unit Minimum Maximum Average
+    -------------------- ----------- ------- ------- -------
+    Executed Ipc Active   inst/cycle    1.36    1.36    1.36
+    Executed Ipc Elapsed  inst/cycle    0.87    0.87    0.87
+    Issue Slots Busy               %   21.87   21.87   21.87
+    Issued Ipc Active     inst/cycle    1.36    1.36    1.36
+    SM Busy                        %   21.87   21.87   21.87
+    -------------------- ----------- ------- ------- -------
+
+    Section: GPU Speed Of Light Throughput
+    ----------------------- ----------- ---------- ---------- ----------
+    Metric Name             Metric Unit    Minimum    Maximum    Average
+    ----------------------- ----------- ---------- ---------- ----------
+    DRAM Frequency                  Ghz       4.00       4.00       4.00
+    SM Frequency                    Ghz       1.91       1.91       1.91
+    Elapsed Cycles                cycle 1369328.00 1369328.00 1369328.00
+    Memory Throughput                 %      42.46      42.46      42.46
+    DRAM Throughput                   %      19.54      19.54      19.54
+    Duration                         us     718.11     718.11     718.11
+    L1/TEX Cache Throughput           %      66.25      66.25      66.25
+    L2 Cache Throughput               %      28.25      28.25      28.25
+    SM Active Cycles              cycle  878288.84  878288.84  878288.84
+    Compute (SM) Throughput           %      21.87      21.87      21.87
+    ----------------------- ----------- ---------- ---------- ----------
+
+    Section: GPU and Memory Workload Distribution
+    -------------------------- ----------- ------------ ------------ ------------
+    Metric Name                Metric Unit      Minimum      Maximum      Average
+    -------------------------- ----------- ------------ ------------ ------------
+    Average DRAM Active Cycles       cycle    525629.12    525629.12    525629.12
+    Total DRAM Elapsed Cycles        cycle 183642624.00 183642624.00 183642624.00
+    Average L1 Active Cycles         cycle    878288.84    878288.84    878288.84
+    Total L1 Elapsed Cycles          cycle 202820282.00 202820282.00 202820282.00
+    Average L2 Active Cycles         cycle   1402372.37   1402372.37   1402372.37
+    Total L2 Elapsed Cycles          cycle 260435256.00 260435256.00 260435256.00
+    Average SM Active Cycles         cycle    878288.84    878288.84    878288.84
+    Total SM Elapsed Cycles          cycle 202820282.00 202820282.00 202820282.00
+    Average SMSP Active Cycles       cycle    877848.91    877848.91    877848.91
+    Total SMSP Elapsed Cycles        cycle 811281128.00 811281128.00 811281128.00
+    -------------------------- ----------- ------------ ------------ ------------
+
+    Section: Instruction Statistics
+    ---------------------------------------- ----------- ------------ ------------ ------------
+    Metric Name                              Metric Unit      Minimum      Maximum      Average
+    ---------------------------------------- ----------- ------------ ------------ ------------
+    Avg. Executed Instructions Per Scheduler        inst    299341.65    299341.65    299341.65
+    Executed Instructions                           inst 177210256.00 177210256.00 177210256.00
+    Avg. Issued Instructions Per Scheduler          inst    299694.09    299694.09    299694.09
+    Issued Instructions                             inst 177418903.00 177418903.00 177418903.00
+    ---------------------------------------- ----------- ------------ ------------ ------------
+
+    Section: Launch Statistics
+    -------------------------------- --------------- -------- -------- --------
+    Metric Name                          Metric Unit  Minimum  Maximum  Average
+    -------------------------------- --------------- -------- -------- --------
+    Block Size                                         192.00   192.00   192.00
+    Cluster Size                                         0.00     0.00     0.00
+    Grid Size                                           96.00    96.00    96.00
+    Preferred Cluster Size                               0.00     0.00     0.00
+    Registers Per Thread             register/thread    74.00    74.00    74.00
+    Shared Memory Configuration Size           Kbyte   200.70   200.70   200.70
+    Driver Shared Memory Per Block       Kbyte/block     1.02     1.02     1.02
+    Dynamic Shared Memory Per Block      Kbyte/block    98.43    98.43    98.43
+    Static Shared Memory Per Block        byte/block     0.00     0.00     0.00
+    # SMs                                         SM   148.00   148.00   148.00
+    Stack Size                                        1024.00  1024.00  1024.00
+    Threads                                   thread 18432.00 18432.00 18432.00
+    # TPCs                                              74.00    74.00    74.00
+    Uses Green Context                                   0.00     0.00     0.00
+    Waves Per SM                                         0.32     0.32     0.32
+    -------------------------------- --------------- -------- -------- --------
+
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- --------- --------- ---------
+    Metric Name                            Metric Unit   Minimum   Maximum   Average
+    -------------------------------------- ----------- --------- --------- ---------
+    Local Memory Spilling Requests                          0.00      0.00      0.00
+    Local Memory Spilling Request Overhead           %      0.00      0.00      0.00
+    Memory Throughput                          Tbyte/s      1.50      1.50      1.50
+    Mem Busy                                         %     42.46     42.46     42.46
+    Max Bandwidth                                    %     26.80     26.80     26.80
+    L1/TEX Hit Rate                                  %      0.00      0.00      0.00
+    L2 Persisting Size                           Mbyte     24.87     24.87     24.87
+    L2 Compression Success Rate                      %      0.00      0.00      0.00
+    L2 Compression Ratio                             %      0.00      0.00      0.00
+    L2 Compression Input Sectors                sector 201368.00 201368.00 201368.00
+    L2 Hit Rate                                      %     51.47     51.47     51.47
+    Mem Pipes Busy                                   %     11.34     11.34     11.34
+    -------------------------------------- ----------- --------- --------- ---------
+
+    Section: Occupancy
+    ------------------------------- ----------- ------- ------- -------
+    Metric Name                     Metric Unit Minimum Maximum Average
+    ------------------------------- ----------- ------- ------- -------
+    Max Active Clusters                 cluster    0.00    0.00    0.00
+    Max Cluster Size                      block    8.00    8.00    8.00
+    Overall GPU Occupancy                     %    0.00    0.00    0.00
+    Cluster Occupancy                         %    0.00    0.00    0.00
+    Block Limit Barriers                  block    7.00    7.00    7.00
+    Block Limit SM                        block   32.00   32.00   32.00
+    Block Limit Registers                 block    4.00    4.00    4.00
+    Block Limit Shared Mem                block    2.00    2.00    2.00
+    Block Limit Warps                     block   10.00   10.00   10.00
+    Theoretical Active Warps per SM        warp   12.00   12.00   12.00
+    Theoretical Occupancy                     %   18.75   18.75   18.75
+    Achieved Occupancy                        %    9.37    9.37    9.37
+    Achieved Active Warps Per SM           warp    6.00    6.00    6.00
+    ------------------------------- ----------- ------- ------- -------
+
+    Section: PM Sampling
+    ------------------------- ----------- ------- ------- -------
+    Metric Name               Metric Unit Minimum Maximum Average
+    ------------------------- ----------- ------- ------- -------
+    Maximum Buffer Size             Mbyte   60.75   60.75   60.75
+    Maximum Sampling Interval          us    1.00    1.00    1.00
+    # Pass Groups                            2.00    2.00    2.00
+    ------------------------- ----------- ------- ------- -------
+
+    Section: Scheduler Statistics
+    ---------------------------- ----------- ------- ------- -------
+    Metric Name                  Metric Unit Minimum Maximum Average
+    ---------------------------- ----------- ------- ------- -------
+    One or More Eligible                   %   34.14   34.14   34.14
+    Issued Warp Per Scheduler                   0.34    0.34    0.34
+    No Eligible                            %   65.86   65.86   65.86
+    Active Warps Per Scheduler          warp    1.50    1.50    1.50
+    Eligible Warps Per Scheduler        warp    0.36    0.36    0.36
+    ---------------------------- ----------- ------- ------- -------
+
+    Section: Source Counters
+    ------------------------- ----------- ---------- ---------- ----------
+    Metric Name               Metric Unit    Minimum    Maximum    Average
+    ------------------------- ----------- ---------- ---------- ----------
+    Branch Instructions Ratio           %       0.02       0.02       0.02
+    Branch Instructions              inst 3841671.00 3841671.00 3841671.00
+    Branch Efficiency                   %      99.98      99.98      99.98
+    Avg. Divergent Branches      branches       0.81       0.81       0.81
+    ------------------------- ----------- ---------- ---------- ----------
+
+    Section: Warp State Statistics
+    ---------------------------------------- ----------- ------- ------- -------
+    Metric Name                              Metric Unit Minimum Maximum Average
+    ---------------------------------------- ----------- ------- ------- -------
+    Warp Cycles Per Issued Instruction             cycle    4.39    4.39    4.39
+    Warp Cycles Per Executed Instruction           cycle    4.40    4.40    4.40
+    Avg. Active Threads Per Warp                           27.61   27.61   27.61
+    Avg. Not Predicated Off Threads Per Warp               27.54   27.54   27.54
+    ---------------------------------------- ----------- ------- ------- -------
+
+  Note: The shown averages are calculated as the arithmetic mean of the metric values after the evaluation of the    
+  metrics for each individual kernel launch.                                                                         
+  If aggregating across varying launch configurations (like shared memory, cache config settings), the arithmetic    
+  mean can be misleading and looking at the individual results is recommended instead.                               
+

@@ -13,7 +13,7 @@ wgmma(SM90)或 tcgen05(SM100)——在 GB200/B300 上运行时同样如此。
 
 ## 任务(三层)
 
-1. 复现:在 B300 上装起 FlashKDA,跑通官方 benchmark(`benchmarks/`,
+1. (**已完成,有了一个AIGC的报告,资料在TASK1_assignment_artifacts**)复现:在 B300 上装起 FlashKDA,跑通官方 benchmark(`benchmarks/`,
    形状对照 `BENCHMARK_GB200.md`),用 ncu/SASS 确认计算主路径确实是
    SM80 MMA(`benchmarks/ncu.sh` 是官方的 ncu 模板)。
 2. 分析:下面的讨论点逐个给出"结论 + 证据"。量化类的先纸面推算,
@@ -44,10 +44,7 @@ wgmma(SM90)或 tcgen05(SM100)——在 GB200/B300 上运行时同样如此。
 
 ## 材料
 
-- `FlashKDA/`:官方仓库快照,pin commit `1ce47ea`(2026-07-29)。
-  cutlass 子模块未含在快照里,构建时用
-  `git clone --recurse-submodules https://github.com/MoonshotAI/FlashKDA`
-  后 `git checkout 1ce47ea`(cutlass pin `5c149f5`)。
+- `FlashKDA/`:官方仓库快照,cutlass 子模块已包含.
   重点文件:`docs/20260420-flashkda-v1-deep-dive.md`(设计文档)、
   `BENCHMARK_GB200.md`(官方数据表)、`csrc/smxx/`(kernel 本体)、
   `benchmarks/`(bench 与 ncu 脚本)、README(chunk_kda 调用约定与

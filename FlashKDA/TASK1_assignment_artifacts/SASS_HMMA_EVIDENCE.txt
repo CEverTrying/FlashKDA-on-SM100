@@ -1,0 +1,37 @@
+FlashKDA sm_103a HMMA evidence
+Source: assignment_artifacts/FLASHKDA_B300.sass
+
+SECTION 1: STATIC HMMA COUNT BY KERNEL FAMILY
+Purpose: Shows that both K1 prepare and K2 recurrence contain HMMA instructions.
+These are static instructions across compiled cubin variants, not the dynamic
+instruction count of one forward execution.
+
+prepare_K1             88
+recurrence_K2         1456
+total                  1544
+
+SECTION 2: REPRESENTATIVE HMMA INSTRUCTIONS
+Purpose: Shows the emitted MMA form directly. HMMA.16816.F32.BF16 is the
+SM80-style M16N8K16 operation with BF16 inputs and FP32 accumulation.
+The leading number is the source line in the complete SASS dump.
+
+1991:        /*3dc0*/                   HMMA.16816.F32.BF16 R12, R28.reuse, R40, RZ ;                /* 0x000000281c0c723c */
+1997:        /*3df0*/                   HMMA.16816.F32.BF16 R8, R28, R42, RZ ;                       /* 0x0000002a1c08723c */
+2001:        /*3e10*/                   HMMA.16816.F32.BF16 R12, R24.reuse, R36, R12 ;               /* 0x00000024180c723c */
+2003:        /*3e20*/                   HMMA.16816.F32.BF16 R8, R24, R38, R8 ;                       /* 0x000000261808723c */
+2005:        /*3e30*/                   HMMA.16816.F32.BF16 R4, R28, R16, RZ ;                       /* 0x000000101c04723c */
+2009:        /*3e50*/                   HMMA.16816.F32.BF16 R28, R28, R18, RZ ;                      /* 0x000000121c1c723c */
+2015:        /*3e80*/                   HMMA.16816.F32.BF16 R44, R20, R40, RZ ;                      /* 0x00000028142c723c */
+2017:        /*3e90*/                   HMMA.16816.F32.BF16 R4, R24.reuse, R32, R4 ;                 /* 0x000000201804723c */
+2019:        /*3ea0*/                   HMMA.16816.F32.BF16 R28, R24, R34, R28 ;                     /* 0x00000022181c723c */
+2021:        /*3eb0*/                   HMMA.16816.F32.BF16 R40, R20.reuse, R42, RZ ;                /* 0x0000002a1428723c */
+2023:        /*3ec0*/                   HMMA.16816.F32.BF16 R24, R20.reuse, R16, RZ ;                /* 0x000000101418723c */
+2025:        /*3ed0*/                   HMMA.16816.F32.BF16 R20, R20, R18, RZ ;                      /* 0x000000121414723c */
+2029:        /*3ef0*/                   HMMA.16816.F32.BF16 R24, R16.reuse, R32, R24 ;               /* 0x000000201018723c */
+2031:        /*3f00*/                   HMMA.16816.F32.BF16 R44, R16.reuse, R36, R44 ;               /* 0x00000024102c723c */
+2033:        /*3f10*/                   HMMA.16816.F32.BF16 R40, R16.reuse, R38, R40 ;               /* 0x000000261028723c */
+2037:        /*3f30*/                   HMMA.16816.F32.BF16 R20, R16, R34, R20 ;                     /* 0x000000221014723c */
+2043:        /*3f60*/                   HMMA.16816.F32.BF16 R4, R16.reuse, R32, R4 ;                 /* 0x000000201004723c */
+2045:        /*3f70*/                   HMMA.16816.F32.BF16 R12, R16.reuse, R36, R12 ;               /* 0x00000024100c723c */
+2047:        /*3f80*/                   HMMA.16816.F32.BF16 R8, R16.reuse, R38, R8 ;                 /* 0x000000261008723c */
+2049:        /*3f90*/                   HMMA.16816.F32.BF16 R28, R16, R34, R28 ;                     /* 0x00000022101c723c */
