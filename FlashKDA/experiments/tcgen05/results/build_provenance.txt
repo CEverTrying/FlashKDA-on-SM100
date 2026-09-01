@@ -1,0 +1,7 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Wed_Aug_20_01:58:59_PM_PDT_2025
+Cuda compilation tools, release 13.0, V13.0.88
+Build cuda_13.0.r13.0/compiler.36424714_0
+ba240d565ecc4a66bd2b868e00a36660b1490cca65c30d89c700dab850c3c4c0  ../kda_mma_microbench.cu
+08e0bbc5e9f2f961c490a2fe5e446c570fdc55e20d56f3c559434507109cb285  ../build/kda_mma_microbench

@@ -2,6 +2,10 @@
 
 FlashKDA: Flash Kimi Delta Attention — high-performance KDA kernels built on CUTLASS
 
+## 中文项目导读
+
+第一次接触 KDA、CUDA kernel 或本项目实验时，可以先读[项目导读](reports/PROJECT_GUIDE.md)，再打开[交互流程图](reports/PROJECT_WORKFLOW.html)查看输入、K1、K2、验证证据和当前结论之间的关系。全部报告见[报告索引](reports/README.md)。
+
 ## News
 
 - **2026-04-22** — Deep-Dive Blog: the design decisions behind FlashKDA v1, read it [here](docs/20260420-flashkda-v1-deep-dive.md).
@@ -65,7 +69,7 @@ Once installed, FlashKDA is auto-dispatched from `flash-linear-attention`'s `chu
 
 ## Performance
 
-See [BENCHMARK_H20.md](BENCHMARK_H20.md).
+See [BENCHMARK_H20.md](reports/BENCHMARK_H20.md).
 
 ## Tests
 

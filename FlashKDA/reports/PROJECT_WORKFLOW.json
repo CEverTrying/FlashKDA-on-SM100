@@ -1,0 +1,64 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "FlashKDA 项目全流程",
+    "locale": "zh-CN",
+    "output": "PROJECT_WORKFLOW.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    { "id": "api", "label": "输入与接口" },
+    { "id": "kernel", "label": "CUDA 前向计算" },
+    { "id": "evidence", "label": "实验与证据" },
+    { "id": "decision", "label": "当前判断" }
+  ],
+  "phases": [
+    { "id": "prepare", "label": "准备输入", "fromCol": 0, "toCol": 1 },
+    { "id": "execute", "label": "执行 KDA", "fromCol": 2, "toCol": 4, "variant": "emphasis" },
+    { "id": "verify", "label": "输出与验证", "fromCol": 5, "toCol": 5, "variant": "dashed" }
+  ],
+  "groups": [
+    { "id": "forward", "label": "FlashKDA forward", "lane": "kernel", "fromCol": 1, "toCol": 5, "variant": "emphasis" },
+    { "id": "measurements", "label": "证据链", "lane": "evidence", "fromCol": 2, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": ["inputs", "chunks", "k1", "workspace", "k2", "outputs"],
+  "semanticChecks": {
+    "allowedRoots": ["inputs"],
+    "allowedTerminals": ["sm100_decision"],
+    "requiredPaths": [
+      { "from": "inputs", "to": "outputs" },
+      { "from": "inputs", "to": "sm100_decision" }
+    ]
+  },
+  "nodes": [
+    { "id": "inputs", "lane": "api", "col": 0, "type": "frontend", "label": "输入张量", "sublabel": "q · k · v · gate · beta · state", "tag": "BF16 主输入", "width": 136 },
+    { "id": "chunks", "lane": "kernel", "col": 1, "type": "backend", "label": "切成 CHUNK 16", "sublabel": "固定长度或 varlen" },
+    { "id": "k1", "lane": "kernel", "col": 2, "type": "backend", "label": "K1 prepare", "sublabel": "chunk 内计算与 Neumann 求逆", "tag": "grid 大", "width": 126 },
+    { "id": "workspace", "lane": "kernel", "col": 3, "type": "database", "label": "Workspace", "sublabel": "保存 K2 所需中间量", "tag": "TMA 搬运" },
+    { "id": "k2", "lane": "kernel", "col": 4, "type": "backend", "label": "K2 recurrence", "sublabel": "逐 chunk 更新 128×128 state", "tag": "grid 小", "width": 126 },
+    { "id": "outputs", "lane": "api", "col": 5, "type": "frontend", "label": "输出结果", "sublabel": "output 与 final state" },
+    { "id": "mma_study", "lane": "evidence", "col": 2, "type": "external", "label": "CHUNK 与 MMA 实验", "sublabel": "HMMA 对比 TCGEN05", "width": 132 },
+    { "id": "ncu_profile", "lane": "evidence", "col": 4, "type": "cloud", "label": "NCU 与 roofline", "sublabel": "CTA · SM · DRAM · occupancy", "width": 132 },
+    { "id": "correctness", "lane": "evidence", "col": 5, "type": "security", "label": "正确性与精度", "sublabel": "torch_ref · FLA · 580 case", "width": 126 },
+    { "id": "sm100_decision", "lane": "decision", "col": 5, "type": "messagebus", "label": "当前 SM100 判断", "sublabel": "保留现有 kernel，优先研究 K2 两 CTA", "tag": "负结果可交付", "width": 154 }
+  ],
+  "edges": [
+    { "from": "inputs", "to": "chunks", "label": "按序列组织", "role": "main" },
+    { "from": "chunks", "to": "k1", "role": "main" },
+    { "from": "k1", "to": "workspace", "label": "写中间量", "role": "main" },
+    { "from": "workspace", "to": "k2", "label": "逐 chunk 读取", "role": "main" },
+    { "from": "k2", "to": "outputs", "label": "写回", "role": "main" },
+    { "from": "k1", "to": "mma_study", "label": "分析指令形状", "role": "branch" },
+    { "from": "k2", "to": "ncu_profile", "label": "采集运行 counters", "role": "branch" },
+    { "from": "outputs", "to": "correctness", "label": "对拍与回归", "role": "branch" },
+    { "from": "mma_study", "to": "sm100_decision", "label": "直接替换慢 2.82 倍", "variant": "security", "role": "branch" },
+    { "from": "ncu_profile", "to": "sm100_decision", "label": "H12 仅 12 个 CTA", "variant": "emphasis", "role": "branch" },
+    { "from": "correctness", "to": "sm100_decision", "label": "580 项通过", "variant": "emphasis", "role": "branch" }
+  ],
+  "cards": [
+    { "dot": "emerald", "title": "已经确认", "items": ["FlashKDA 在 B300 上正确运行并快于 FLA 对照", "最终 SASS 使用 HMMA 与 TMA，没有 TCGEN05", "完整扩展测试为 580 passed"] },
+    { "dot": "amber", "title": "主要发现", "items": ["CHUNK 16 同时受数值范围与求逆成本约束", "TCGEN05 最小 M64 让 C16 浪费四分之三算术", "TP8 fixed H12 的 K2 首先缺少独立工作"] },
+    { "dot": "cyan", "title": "当前边界", "items": ["尚无端到端 sm100a FlashKDA candidate", "下一项原型是按 value 列拆成两个 CTA", "原型需通过 H96、H12 和 580 case 三道检查"] }
+  ]
+}

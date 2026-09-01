@@ -1,10 +1,12 @@
 # C1:FlashKDA——官方 kernel 停在 SM80 MMA
 
+当前项目报告统一收录在 [`FlashKDA/reports/`](FlashKDA/reports/README.md)。
+
 ## 背景
 
 Kimi K3 的线性注意力部分是 KDA(Kimi Delta Attention)。Moonshot 开源的
 FlashKDA(本目录 `FlashKDA/` 快照)是其高性能 forward kernel,在 GB200 上
-对 fla 的 Triton `chunk_kda` 有 1.7-3.3 倍加速(`BENCHMARK_GB200.md`)。
+对 fla 的 Triton `chunk_kda` 有 1.7-3.3 倍加速(`FlashKDA/reports/BENCHMARK_GB200.md`)。
 值得注意的是:这份 kernel 的矩阵乘用的是 SM80 世代的 `mma.sync`,而不是
 wgmma(SM90)或 tcgen05(SM100)——在 GB200/B300 上运行时同样如此。
 作者在 `docs/20260420-flashkda-v1-deep-dive.md` 里解释了设计,但"为什么
@@ -14,7 +16,7 @@ wgmma(SM90)或 tcgen05(SM100)——在 GB200/B300 上运行时同样如此。
 ## 任务(三层)
 
 1. (**已完成,有了一个AIGC的报告,资料在TASK1_assignment_artifacts**)复现:在 B300 上装起 FlashKDA,跑通官方 benchmark(`benchmarks/`,
-   形状对照 `BENCHMARK_GB200.md`),用 ncu/SASS 确认计算主路径确实是
+   形状对照 `FlashKDA/reports/BENCHMARK_GB200.md`),用 ncu/SASS 确认计算主路径确实是
    SM80 MMA(`benchmarks/ncu.sh` 是官方的 ncu 模板)。
 2. 分析:下面的讨论点逐个给出"结论 + 证据"。量化类的先纸面推算,
    再用 microbench 验证。
@@ -46,7 +48,7 @@ wgmma(SM90)或 tcgen05(SM100)——在 GB200/B300 上运行时同样如此。
 
 - `FlashKDA/`:官方仓库快照,cutlass 子模块已包含.
   重点文件:`docs/20260420-flashkda-v1-deep-dive.md`(设计文档)、
-  `BENCHMARK_GB200.md`(官方数据表)、`csrc/smxx/`(kernel 本体)、
+  `reports/BENCHMARK_GB200.md`(官方数据表)、`csrc/smxx/`(kernel 本体)、
   `benchmarks/`(bench 与 ncu 脚本)、README(chunk_kda 调用约定与
   dispatch 调试方法)。
 - `fla_kda_ref/`:fla-org/flash-linear-attention 的 `fla/ops/kda/` 快照,

@@ -19,7 +19,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 BENCH_FWD = Path(__file__).resolve().parent / "bench_fwd.py"
-DEFAULT_OUT = REPO_ROOT / "BENCHMARK_H20.md"
+DEFAULT_OUT = REPO_ROOT / "reports" / "BENCHMARK_H20.md"
 DEFAULT_DEVICE_LABEL = "Hopper / H20"
 
 # Matches ``chunk_kda(...)`` in ``benchmarks/bench_fwd.py`` (documented in the report).

@@ -8,3 +8,7 @@ build/**
 **/__pycache__/**
 .clangd
 plot*.png
+
+# Assignment evidence is intentionally versionable.
+!experiments/ncu/results/*.ncu-rep
+!experiments/sass/final.sass

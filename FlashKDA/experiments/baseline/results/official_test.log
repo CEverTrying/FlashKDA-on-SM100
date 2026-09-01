@@ -1,0 +1,138 @@
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning:   g=-8_bias=0 ht diff: 0.006141 ratio: 0.009628
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning: g=-8_bias=0 chunk_kda ht diff: 0.003692 ratio: 0.006802
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning: g=0_bias={-8,8} ht diff: 0.006501 ratio: 0.007842
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning: g=0_bias=U(-8,8) ht diff: 0.010456 ratio: 0.005583
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning: g=0_bias=N(0,8) ht diff: 0.018679 ratio: 0.009340
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning:   g=-8_bias=0 ht diff: 0.038424 ratio: 0.008926
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning: g=0_bias={-8,8} ht diff: 0.043673 ratio: 0.008188
+  warnings.warn(msg)
+/home/lcpu/69486258/FlashKDA-on-SM100/.venv-b300/lib/python3.12/site-packages/fla/utils/_testing.py:39: UserWarning: g=0_bias=N(0,8) ht diff: 0.038990 ratio: 0.008465
+  warnings.warn(msg)
+Testing shape: [1, 8192, 96, 128]
+67072.0 67072.0
+  output | avg_rtol: 0.0, max_rtol: 0.0
+  output | avg_atol: 0.0, max_atol: 0.0
+Success: kernel == torch ref (exact match)
+
+test_fwd_varlen: seq_lens=[1300, 547, 2048, 963, 271, 3063], T_total=8192, N=6, H=96, D=128
+358400.0 358400.0
+  output | avg_rtol: 0.0, max_rtol: 0.0
+  output | avg_atol: 0.0, max_atol: 0.0
+Success: varlen kernel == torch ref (exact match)
+
+================================================================================
+Case: g=-8_bias=0
+  chunk_kda  | Output err_ratio: 5.416611e-03, State err_ratio: 6.801834e-03
+  flash_kda  | Output err_ratio: 4.296166e-03, State err_ratio: 9.627505e-03
+
+================================================================================
+Case: g=-4_bias=0
+  chunk_kda  | Output err_ratio: 2.935053e-03, State err_ratio: 2.880469e-03
+  flash_kda  | Output err_ratio: 3.360355e-03, State err_ratio: 4.106858e-03
+
+================================================================================
+Case: g=0_bias=0
+  chunk_kda  | Output err_ratio: 3.791582e-03, State err_ratio: 2.827969e-03
+  flash_kda  | Output err_ratio: 4.324799e-03, State err_ratio: 3.776810e-03
+
+================================================================================
+Case: g=8_bias=0
+  chunk_kda  | Output err_ratio: 3.883446e-03, State err_ratio: 2.477734e-03
+  flash_kda  | Output err_ratio: 4.240590e-03, State err_ratio: 4.273142e-03
+
+================================================================================
+Case: g=U(-8,8)_bias=0
+  chunk_kda  | Output err_ratio: 3.271943e-03, State err_ratio: 2.871605e-03
+  flash_kda  | Output err_ratio: 3.523340e-03, State err_ratio: 4.162949e-03
+
+================================================================================
+Case: g=N(0,8)_bias=0
+  chunk_kda  | Output err_ratio: 3.230172e-03, State err_ratio: 2.872885e-03
+  flash_kda  | Output err_ratio: 3.508272e-03, State err_ratio: 4.600360e-03
+
+================================================================================
+Case: g=0_bias={-4,4}
+  chunk_kda  | Output err_ratio: 2.525638e-03, State err_ratio: 2.146759e-03
+  flash_kda  | Output err_ratio: 3.149180e-03, State err_ratio: 3.428290e-03
+
+================================================================================
+Case: g=0_bias={-8,8}
+  chunk_kda  | Output err_ratio: 2.827445e-03, State err_ratio: 4.802077e-03
+  flash_kda  | Output err_ratio: 3.234408e-03, State err_ratio: 7.841610e-03
+
+================================================================================
+Case: g=0_bias=U(-8,8)
+  chunk_kda  | Output err_ratio: 2.374393e-03, State err_ratio: 1.900248e-03
+  flash_kda  | Output err_ratio: 2.924999e-03, State err_ratio: 5.582569e-03
+
+================================================================================
+Case: g=0_bias=N(0,8)
+  chunk_kda  | Output err_ratio: 2.385805e-03, State err_ratio: 2.571056e-03
+  flash_kda  | Output err_ratio: 3.198369e-03, State err_ratio: 9.339514e-03
+
+Plot saved to: plot.png
+
+================================================================================
+Assert results: Success
+seq_lens: [1300, 547, 2048, 963, 271, 3063], T_total: 8192, N: 6
+
+================================================================================
+Case: g=-8_bias=0
+  chunk_kda   | Output err_ratio: 6.088918e-03, State err_ratio: 3.617549e-03
+  flash_kda   | Output err_ratio: 5.149881e-03, State err_ratio: 8.926108e-03
+
+================================================================================
+Case: g=-4_bias=0
+  chunk_kda   | Output err_ratio: 2.978897e-03, State err_ratio: 3.003493e-03
+  flash_kda   | Output err_ratio: 3.408409e-03, State err_ratio: 3.996816e-03
+
+================================================================================
+Case: g=0_bias=0
+  chunk_kda   | Output err_ratio: 3.790465e-03, State err_ratio: 3.172484e-03
+  flash_kda   | Output err_ratio: 4.320283e-03, State err_ratio: 4.415291e-03
+
+================================================================================
+Case: g=8_bias=0
+  chunk_kda   | Output err_ratio: 3.883342e-03, State err_ratio: 2.942293e-03
+  flash_kda   | Output err_ratio: 4.242973e-03, State err_ratio: 4.345194e-03
+
+================================================================================
+Case: g=U(-8,8)_bias=0
+  chunk_kda   | Output err_ratio: 3.279318e-03, State err_ratio: 2.963140e-03
+  flash_kda   | Output err_ratio: 3.533363e-03, State err_ratio: 4.401782e-03
+
+================================================================================
+Case: g=N(0,8)_bias=0
+  chunk_kda   | Output err_ratio: 3.232504e-03, State err_ratio: 2.980757e-03
+  flash_kda   | Output err_ratio: 3.512006e-03, State err_ratio: 4.787129e-03
+
+================================================================================
+Case: g=0_bias={-4,4}
+  chunk_kda   | Output err_ratio: 2.554242e-03, State err_ratio: 2.299101e-03
+  flash_kda   | Output err_ratio: 3.178931e-03, State err_ratio: 3.351419e-03
+
+================================================================================
+Case: g=0_bias={-8,8}
+  chunk_kda   | Output err_ratio: 3.140977e-03, State err_ratio: 2.833408e-03
+  flash_kda   | Output err_ratio: 3.725702e-03, State err_ratio: 8.188459e-03
+
+================================================================================
+Case: g=0_bias=U(-8,8)
+  chunk_kda   | Output err_ratio: 2.451951e-03, State err_ratio: 1.794003e-03
+  flash_kda   | Output err_ratio: 3.029634e-03, State err_ratio: 5.660967e-03
+
+================================================================================
+Case: g=0_bias=N(0,8)
+  chunk_kda   | Output err_ratio: 2.526042e-03, State err_ratio: 1.806991e-03
+  flash_kda   | Output err_ratio: 3.430947e-03, State err_ratio: 8.465252e-03
+
+Plot saved to: plot_varlen.png
+
+================================================================================
+Assert results: Success

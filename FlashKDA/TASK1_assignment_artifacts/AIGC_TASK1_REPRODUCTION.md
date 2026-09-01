@@ -63,7 +63,7 @@ ELF file    1: fwd_launch.sm_103a.cubin
 
 ## 3. 正式 B300 benchmark
 
-完整、未删减的正式结果保存在 `BENCHMARK_B300.md`。生成命令为：
+完整、未删减的正式结果现存于 `reports/BENCHMARK_B300.md`。下面保留原生成命令：
 
 ```bash
 source .venv-b300-managed/bin/activate
@@ -84,7 +84,7 @@ python benchmarks/generate_benchmark_md.py \
 | 64 | Mixed Varlen | 0.6589 | 1.6747 | 0.9490 |
 | 64 | Varlen 1024x8 | 0.4873 | 1.5706 | 0.8625 |
 
-`BENCHMARK_B300.md` 的 SHA-256 为 `bdd64f551074eed36816a133909d659b6de43fefef27ce43d4af4083bd7ffed1`。
+`reports/BENCHMARK_B300.md` 的 SHA-256 为 `bdd64f551074eed36816a133909d659b6de43fefef27ce43d4af4083bd7ffed1`。
 
 ## 4. sm_103a SASS 证据
 
@@ -260,7 +260,7 @@ Tensor Pipe 列使用 raw metric `sm__pipe_tensor_cycles_active.avg.pct_of_peak_
 
 | 文件 | SHA-256 |
 |---|---|
-| `BENCHMARK_B300.md` | `bdd64f551074eed36816a133909d659b6de43fefef27ce43d4af4083bd7ffed1` |
+| `reports/BENCHMARK_B300.md` | `bdd64f551074eed36816a133909d659b6de43fefef27ce43d4af4083bd7ffed1` |
 | `assignment_artifacts/FLASHKDA_B300.sass` | `5eae99eedd4e662c40df01a12d6e20a4245d400efd8ec373c6064206e4c9e836` |
 | `assignment_artifacts/SASS_HMMA_EVIDENCE.txt` | `81cbda478ba5e6aea6a2df120b270dfcbce20872dc0401bfa85a86087307386c` |
 | `assignment_artifacts/B300_FIXED_H96_FP32.ncu-rep` | `7a57d16ea22f8588428ec542294f80a896588c698bd6386bfd72ab6a241cb0df` |
